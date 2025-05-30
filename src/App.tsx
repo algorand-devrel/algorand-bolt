@@ -46,75 +46,155 @@ function App() {
           <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <WalletInfo />
             <div className="mt-8">
-              <h1 className="text-3xl font-bold  mb-4">Algorand Resources</h1>
+            <h1 className="text-3xl font-bold  mb-4">Algorand Resources</h1>
               <div className="flex flex-col gap-2">
                 <p className=" mx-auto">
                   This example demonstrates a foundation for building a web app
                   with connectivity to the Algorand blockchain. It includes
                   prompts to guide Bolt in building with you. The instructions
                   and resources below can be ripped out as you start crafting
-                  your own app.
+                  your own app. Note Algokit Subscriber, Utils are available in TypeScript and Python.
                 </p>
-                <h2 className="text-2xl">Algorand Developer Portal</h2>
-                <p>
-                  Find everything you need to build applications powered by the
-                  Algorand blockchain in our{' '}
-                  <a
-                    href="https://dev.algorand.co"
-                    className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Developer Portal
-                  </a>
-                  .
-                </p>
-                <h2 className="text-2xl">Algorand Discord</h2>
-                <p>
-                  Connect with and get code help from other Algorand developers
-                  in our{' '}
-                  <a
-                    href="https://github.com/Algorand-Developer-Retreat/use-wallet-ui"
-                    className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Discord server
-                  </a>
-                  .
-                </p>
-                <h2 className="text-2xl">Use Wallet UI Library</h2>
-                <p>
-                  Read the Use Wallet{' '}
-                  <a
-                    href="https://github.com/Algorand-Developer-Retreat/use-wallet-ui"
-                    className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    documentation
-                  </a>{' '}
-                  to learn about implementing Algorand wallet integration in
-                  your dApp.
-                </p>
+                <p>How to use: </p>
+                <br></br>
+              </div>  
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
+                  <h2 className="text-xl font-semibold mb-3">Core Tools</h2>
+                  <ul className="space-y-2">
+                    <li>
+                      <a href="https://dev.algorand.co/algokit/algokit-intro/" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        AlgoKit 
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://lora.algokit.io/" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        Lora Explorer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.npmjs.com/package/@algorandfoundation/algokit-utils" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        AlgoKit Utils (v9.0.1)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.npmjs.com/package/@txnlab/use-wallet-ui-react" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        use-wallet-ui-react (v0.2.2)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.npmjs.com/package/@algorandfoundation/algokit-subscriber" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        Algokit Subscriber (v3.2.0) 
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
+                  <h2 className="text-xl font-semibold mb-3">Learning Resources</h2>
+                  <ul className="space-y-2">
+                    <li>
+                      <a href="https://algokit-example-gallery.pages.dev/" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        Example Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dev.algorand.co/getting-started/introduction/" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        Official Documentation
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://tutorials.dev.algorand.co/" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        Interactive Algokit Code Tutorials
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
+                  <h2 className="text-xl font-semibold mb-3">Community</h2>
+                  <ul className="space-y-2">
+                    <li>
+                      <a href="https://discord.com/invite/algorand" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        Algorand Discord
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dev.algorand.co/arc-standards/" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        ARC Standards
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
+                  <h2 className="text-xl font-semibold mb-3">Contract Languages</h2>
+                  <ul className="space-y-2">
+                    <li>
+                      <a href="https://dev.algorand.co/algokit/languages/python/overview/" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        Algokit Python
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://dev.algorand.co/algokit/languages/typescript/overview/" 
+                         className="text-blue-500 hover:underline" target="_blank">
+                        Algokit Typescript
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+
             <div className="my-8">
-              <h1 className="text-3xl font-bold my-8">Start Vibing</h1>
-              <div className="flex flex-col gap-2 my-4 m-auto">
-                <h2 className="text-2xl">Step 1</h2>
-                <p>
-                  In Bolt's input area, use the double chat bubble button to
-                  switch to discussion mode and use this prompt into the input
-                  to prime Bolt on Algorand knowledge
-                </p>
-                <TextWithCopy text="Copy this text" />
-                <h2 className="text-2xl">Step 2</h2>
-                <p>
-                  Switch back to Bolt's build mode and use this prompt to kick
-                  off your vibe session!
-                </p>
-                <TextWithCopy text="Copy this text" />
+              <h1 className="text-3xl font-bold my-8">Bolt.new Integration Guide</h1>
+              <div className="flex flex-col gap-4 my-4">
+                <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+                  <h2 className="text-xl font-semibold mb-2">Initial Setup Prompt</h2>
+                  <p className="mb-2">Use this in discussion mode to configure Bolt for Algorand development:</p>
+                  <TextWithCopy text={`I'm building an Algorand dApp using these specific packages:
+- @algorandfoundation/algokit-utils v9.0.1 for blockchain interactions
+- @txnlab/use-wallet-ui-react v0.2.2 for wallet connectivity
+- @perawallet/connect for Pera Wallet support
+- lute-connect for Lute Wallet support
+
+Do not use the deprecated algosdk. All code should use TypeScript and modern React patterns. The application should support both mainnet and testnet.`} />
+                </div>
+
+                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                  <h2 className="text-xl font-semibold mb-2">Common Use Case Prompts</h2>
+                  <div className="space-y-3">
+                      <h3 className="font-medium">Transaction Sending</h3>
+                      <TextWithCopy text={`Implement a payment transaction form using algokit-utils that lets users send ALGO to another address. Include amount input, recipient input, network selection, and transaction status tracking.`} />
+                    </div>
+                    <div>
+                      <h3 className="font-medium">Account Management</h3>
+                      <TextWithCopy text={`Add a React component for network switcher and assets owned by that address using @txnlab/use-wallet-react and @algorandfoundation/algokit-utils.`} />
+                    </div>
+                    <div>
+                    <div>
+                      <h3 className="font-medium">Contract Interaction</h3>
+                      <TextWithCopy text={`Create an ABI method caller component that can interact with an Algorand smart contract. Use algokit-utils for the contract interaction and display the results. Support both mainnet and testnet.`} />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+                  <h2 className="text-xl font-semibold mb-2">AlgoKit Implementation Note</h2>
+                  <p>Since Bolt.new doesn't currently have AlgoKit implemented, you can use this workaround:</p>
+                  <TextWithCopy text={`When you need to use AlgoKit functionality, I'll provide the specific code implementations based on the @algorandfoundation/algokit-utils documentation. For now, focus on the UI components and wallet integration using @txnlab/use-wallet-react, and I'll handle the AlgoKit parts separately.`} />
+                </div>
               </div>
             </div>
           </main>
